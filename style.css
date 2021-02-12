@@ -52,11 +52,21 @@ iframe {
     width: calc(90vw - 1em);
 }
 
-.desktop-menu, .header-info-dsk{
+.desktop-menu,
+.header-info-dsk {
     display: none;
 }
 
+footer {
+    background-color: yellow;
+    padding: 1em;
+}
+
 @media (min-width: 1025px) {
+    * {
+        font-family: 'Archivo', sans-serif;
+    }
+
     #icon {
         display: none;
     }
@@ -72,10 +82,16 @@ iframe {
         margin-left: 58em;
     }
 
-    .header-info-dsk li {
+    .item {
         display: inline-block;
         text-align: right;
         margin-left: 5em;
+    }
+
+    .socials {
+        display: inline-block;
+        text-align: right;
+        margin-left: 1em
     }
 
     iframe {
@@ -105,12 +121,12 @@ iframe {
         width: auto;
     }
 
-    .desktop-nav ul {
+    .desktop-menu ul {
         margin: 3.2em 2rem;
         font-size: 1.2em;
     }
 
-    .desktop-nav ul li {
+    .desktop-menu ul li {
         color: grey;
         display: inline-block;
         margin-left: 4em;
@@ -139,5 +155,10 @@ iframe {
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    footer {
+        background-color: yellow;
+        padding: 1em;
     }
 }
