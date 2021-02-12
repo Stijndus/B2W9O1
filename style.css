@@ -1,0 +1,143 @@
+* {
+    font-family: 'Archivo', sans-serif;
+}
+
+header {
+    background-color: yellow;
+    padding: 5vw;
+
+}
+
+nav {
+    background-color: yellow;
+    height: 392px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    padding: 2rem;
+    border-top: 2px solid white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.hide-menu {
+    height: 0px;
+}
+
+section img {
+    margin-right: 19px;
+    width: 55vw;
+    float: right;
+}
+
+.wrapper {
+    margin: 2em;
+}
+
+
+.video {
+    margin: 2em;
+    width: calc(98vw -2em);
+}
+
+iframe {
+    width: calc(90vw - 1em);
+}
+
+.desktop-menu, .header-info-dsk{
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    #icon {
+        display: none;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    .header-info-dsk {
+        display: inline-block;
+        z-index: 10;
+        float: none;
+        margin-left: 58em;
+    }
+
+    .header-info-dsk li {
+        display: inline-block;
+        text-align: right;
+        margin-left: 5em;
+    }
+
+    iframe {
+        margin: 0em 1em;
+        height: 50vw;
+        width: calc(100vw - 6em);
+    }
+
+    .rows {
+        display: flex;
+    }
+
+    #menu {
+        display: none
+    }
+
+    .desktop-menu {
+        display: inline-block;
+        background: #fff;
+        height: 10px;
+    }
+
+    .logo {
+        margin-left: 5em;
+        float: left;
+        height: 7vw;
+        width: auto;
+    }
+
+    .desktop-nav ul {
+        margin: 3.2em 2rem;
+        font-size: 1.2em;
+    }
+
+    .desktop-nav ul li {
+        color: grey;
+        display: inline-block;
+        margin-left: 4em;
+    }
+
+    figure {
+        height: 15vh;
+    }
+
+    figure img {
+        margin: 20px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: yellow;
+        min-width: 160px;
+        padding: 1em;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
